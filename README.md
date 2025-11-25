@@ -1,2 +1,1 @@
-Project: Recipes <br>
-https://marije-kouyzer.github.io/The-Odin-Project/project-recipes/
+[Project: Recipes](https://marije-kouyzer.github.io/The-Odin-Project/project-recipes/) <br>
