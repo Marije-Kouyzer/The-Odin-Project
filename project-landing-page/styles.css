@@ -1,0 +1,142 @@
+:root {
+    --dark-color: #1F2937;
+    --main-font: Roboto;
+    --main-text-color: #F9FAF8;
+    --secondary-text-color: #E5E7EB;
+    --button-color: #3882F6;
+}
+
+body {
+    font-family: var(--main-font), sans-serif;
+}
+
+/* body * {
+    border: 3px red dotted;
+} */
+
+header, footer {
+    background-color: var(--dark-color);
+    color: var(--secondary-text-color);
+}
+
+/* header */
+
+header h1, header h3 {
+    color: var(--main-text-color);
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+header p, nav a {
+    color: var(--secondary-text-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.logo h3 {
+    font-size: 24px;
+    margin: 0 0 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 25px 0 25px;
+    font-size: 18px;;
+}
+
+.subheader {
+    display: flex;
+    justify-content: space-around;
+}
+
+.subheader p {
+    font-size: 18px;
+}
+
+header img {
+    height: 300px;
+    margin: 50px;
+}
+
+/* main */
+main h2 {
+    font-size: 36px;
+    weight: 900;
+}
+
+.images {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+figure img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border: 4px var(--button-color) solid;
+    border-radius: 15px;
+}
+
+figure figcaption {
+    text-align: center;
+}
+
+button {
+    background-color: var(--button-color);
+    border: none;
+    color: var(--secondary-text-color);
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.call-to-action {
+    background-color: var(--button-color);
+    color: var(--main-text-color);
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    margin: 100px;
+}
+
+.call-to-action > * {
+    margin: 25px;
+}
+
+.call-to-action button {
+    border: 2px var(--main-text-color) solid;
+    padding: 10px;
+}
+
+/* quote */
+aside {
+    background-color: var(--secondary-text-color);
+    font-size: 36px;
+    color: var(--dark-color);
+    font-weight: 300;
+    padding: 50px;
+}
+
+blockquote {
+    text-align: center;
+    font-style: italic;
+}
+
+aside p {
+    text-align: right;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    margin: 0;
+}

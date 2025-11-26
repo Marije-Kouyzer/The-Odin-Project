@@ -3,23 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Project: Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
-
+        <nav>
+            <div class="logo">
+                <h3>Seattle</h3>
+            </div>
+            <div class="navigation">
+                <a href="https://en.wikipedia.org/wiki/Seattle" target="_blank">Seattle on Wikipedia</a>
+                <a href="https://visitseattle.org/" target="_blank">Visit Seattle</a>
+            </div>
+        </nav>
+        <div class="subheader">
+            <div>
+                <h1>Seattle, Washington</h1>
+                <p>A great vacation destination!</p>
+                <button onclick="visit_button()">Visit now!</button>
+            </div>
+            <img src="./media/pexels-josh-fields-2290258-3964406.jpg" alt="Aerial view of Seattle, Washington, showing the Space Needle and the Bay.">
+        </div>
     </header>
-    <div>
-
-    </div>
-    <div>
+    <main>
+        <h2>Seattle views</h2>
+        <div class="images">
+            <figure>
+                <img src="./media/pexels-garrettmorrow-2322707.jpg" alt="View from the water of Pier 57 which includes the Great Wheel.">
+                <figcaption>Pier 57.</figcaption>
+            </figure>
+            <figure>
+                <img src="./media/pexels-amanda-grove-138115-419235.jpg" alt="The Public Market sign.">
+                <figcaption>The Public Market.</figcaption>
+            </figure>
+            <figure>
+                <img src="./media/pexels-chaitaastic-1796730.jpg" alt="View of Seattle with Mount Rainier in the background.">
+                <figcaption>Mount Rainier.</figcaption>
+            </figure>
+            <figure>
+                <img src="./media/pexels-jaredvandermeer-3598103.jpg" alt="The Space Needle, as seen from below.">
+                <figcaption>The Space Needle.</figcaption>
+            </figure>
+        </div>
         <aside>
-
+            <blockquote>
+                The weather's classic Seattle. Oh, the water is so blue. It may be the most perfect ferryboat ride I've ever had in my life.
+            </blockquote>
+            <p>- Derek Shepherd (Grey's Anatomy)</p>
         </aside>
-    </div>
+        <div class="call-to-action">
+            <div>
+                <h3>Time to visit!</h3>
+                <p>Click the button on the right for more information on visiting Seattle.</p>
+            </div>
+            <button onclick="visit_button()">Visit now!</button>
+        </div>
+    </main>
     
     <footer>
-
+        <p>Copyright &copy; The Odin Project 2021</p>
     </footer>
 </body>
 </html>
