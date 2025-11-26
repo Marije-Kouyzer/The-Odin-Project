@@ -6,21 +6,36 @@
     --button-color: #3882F6;
 }
 
+html, body {
+    overscroll-behavior: none;
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+}
+
 body {
     font-family: var(--main-font), sans-serif;
 }
 
-/* body * {
-    border: 3px red dotted;
-} */
+header, main, aside, footer {
+    padding: 0 100px 0 100px;
+}
 
 header, footer {
     background-color: var(--dark-color);
     color: var(--secondary-text-color);
 }
 
-/* header */
+button {
+    background-color: var(--button-color);
+    border: none;
+    color: var(--secondary-text-color);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
 
+/* header */
 header h1, header h3 {
     color: var(--main-text-color);
 }
@@ -28,6 +43,7 @@ header h1, header h3 {
 header h1 {
     font-size: 48px;
     font-weight: 900;
+    margin-top: 0;
 }
 
 header p, nav a {
@@ -38,6 +54,10 @@ nav {
     display: flex;
     justify-content: space-around;
     margin-bottom: 50px;
+}
+
+nav div {
+    padding-top: 15px;
 }
 
 .logo h3 {
@@ -60,15 +80,16 @@ nav a {
     font-size: 18px;
 }
 
-header img {
+.subheader img {
     height: 300px;
-    margin: 50px;
+    margin: 0 50px 50px 50px;
 }
 
 /* main */
 main h2 {
     font-size: 36px;
-    weight: 900;
+    font-weight: 900;
+    text-align: center;
 }
 
 .images {
@@ -88,20 +109,11 @@ figure figcaption {
     text-align: center;
 }
 
-button {
-    background-color: var(--button-color);
-    border: none;
-    color: var(--secondary-text-color);
-    padding: 5px;
-    border-radius: 5px;
-    text-align: center;
-}
-
 .call-to-action {
     background-color: var(--button-color);
     color: var(--main-text-color);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: fit-content;
     margin: 100px;
 }
@@ -112,7 +124,8 @@ button {
 
 .call-to-action button {
     border: 2px var(--main-text-color) solid;
-    padding: 10px;
+    height: fit-content;
+    margin: auto 20px auto 0;
 }
 
 /* quote */
@@ -121,7 +134,7 @@ aside {
     font-size: 36px;
     color: var(--dark-color);
     font-weight: 300;
-    padding: 50px;
+    padding: 50px 250px 50px 250px;
 }
 
 blockquote {
@@ -139,4 +152,5 @@ aside p {
 footer {
     text-align: center;
     margin: 0;
+    height: 25px;
 }
